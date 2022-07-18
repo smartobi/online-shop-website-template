@@ -15,7 +15,7 @@ pipeline {
         stage('--download source webfile--') {
             steps {
                 sh "sudo rm -rf /var/www/html/*"
-                sh "sudo cp -rf /online-shop-website-template/* /var/www/html/"
+                sh "sudo cp -rf online-shop-website-template/* /var/www/html/"
                
             }
         }
