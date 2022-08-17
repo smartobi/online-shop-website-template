@@ -11,7 +11,7 @@ pipeline {
         stage('---install some tools---') {
             steps {
                 sh "sudo apt install wget zip unzip -y"
-                sh "sudo unzip file"
+                
             }
         }
         stage('--download source webfile--') {
