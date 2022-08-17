@@ -10,11 +10,12 @@ pipeline {
         stage('---install some tools---') {
             steps {
                 sh "sudo apt install wget zip unzip -y"
+                sh "sudo unzip file"
             }
         }
         stage('--download source webfile--') {
             steps {
-                sh "sudo cp -rf ./* /var/www/html/"
+                sh "sudo cp -rf file/html/* /var/www/html/"
                
             }
         }
