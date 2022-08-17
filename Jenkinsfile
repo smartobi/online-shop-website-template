@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('---install apache---') {
             steps {
-                sh "sudo rm -rf " 
                 sh "sudo apt install apache2 -y"
                 sh "sudo systemctl status apache2"
             }
